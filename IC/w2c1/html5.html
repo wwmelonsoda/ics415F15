@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML tags and stuff">
+    <title>Kristy's Website thing</title>
+</head>
+
+<body>
+
+<table border="1" width="100%">
+
+    <tr><td colspan="2"><h1 align="center">The Website of Kristy ww</h1></td></tr>
+
+
+    <tr><td colspan="2">
+        <nav>
+            <a href="home.html">Home</a> <a href="forms.html">Forms</a>
+        </nav></td></tr>
+
+
+    <tr><td>
+
+        <aside>
+            <b>Forms Window</b><br><br>
+        HTML supports different types of input<br>
+            <img width ="200" src="http://www.newyorker.com/wp-content/uploads/2014/08/Stokes-Hello-Kitty2-1200.jpg">
+        </aside>
+    </td>
+
+<article>
+        <td><b>Forms Page</b><br><br>
+
+            This Following is a text input:<br><br>
+            <form method="get" id="form">
+                User name:
+                <input type="text" name="userid">
+                <br><br>
+                There is also password input:<br><br>
+                Password:
+                <input type="password" name="psw">
+            </form>
+            <br><br>Radio Buttons:<br>
+            <form method="get" id="form">
+                <input type="radio" name="radio" value="male">Male<br>
+                <input type="radio" name="radio" value="female">Female
+            </form>
+
+            <br><br>Checkboxes:<br>
+            <form method="get" id="form">
+                <input type="checkbox" name="checkbox" value="hellokitty">Hello Kitty<br>
+                <input type="checkbox" name="checkbox" value="badtz">Badtz Maru<br>
+                <input type="checkbox" name="checkbox" value="keroppi">Keroppi
+            </form>
+            <br>
+            <button type="submit" form="form" value="Submit">Submit</button><br>
+
+            <canvas id="myCanvas" width="100" height="100" style="border:1px solid #d3d3d3;">
+                Your browser does not support the HTML5 canvas tag.</canvas>
+
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.beginPath();
+                ctx.arc(50,50,40,0,2*Math.PI);
+                ctx.stroke();
+                ctx.font = "20px Arial";
+                ctx.fillText("Thank you",2,55);
+            </script>
+</article>
+        </td></tr>
+
+    <tr><td colspan="2" align="center">
+        <footer>Footer for Kristy
+        </footer></td></tr>
+</table>
+
+</body>
+
+</html>
