@@ -1,0 +1,95 @@
+body {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+    margin: 20px;
+    padding: 0;
+}
+
+/* This is a comment, by the way */
+
+p {
+    line-height: 21px;
+}
+
+h1 {
+    color: darkblue;
+    background-color: lightblue;
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 7px;
+    padding: 4px;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 1px;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: dodgerblue;
+}
+
+h2 {
+    color: white;
+    background-color: lightblue;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 2px;
+    padding-left: 14px;
+}
+
+div {
+    display:inline;
+}
+
+nav {
+    border-style: solid;
+    border-width: 2px;
+    border-color: darkblue;
+    padding: 5px;
+}
+
+aside {
+    border-style:solid;
+    border-width: 2px;
+    border-color: darkblue;
+    padding-bottom:174px;
+    width: 25%;
+    float: left;
+
+}
+
+article {
+    border-style:solid;
+    border-width: 2px;
+    border-color: darkblue;
+    width:100%;
+
+}
+
+img {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: darkblue;
+}
+
+a {
+    color: deeppink;
+
+}
+
+a:visited {
+    color: hotpink;
+}
+
+a:hover {
+    color:coral;
+}
+
+
+footer {
+     font-size: 20px;
+    text-color: white;
+     text-align:center;
+    background: skyblue;
+
+}

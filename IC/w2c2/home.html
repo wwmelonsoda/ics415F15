@@ -4,43 +4,34 @@
     <meta charset="UTF-8">
     <meta name="description" content="HTML tags and stuff">
     <title>Kristy's Website thing</title>
-    <style>
+    <link rel="stylesheet" href="layout.css">
 
-        p {
-            color: crimson;
-        }
-
-        a {
-            color: pink;
-        }
-
-    </style>
 </head>
 
 <body>
 
-<table border="1" width="100%">
 
-    <tr><td colspan="2"><h1 align="center">The Website of Kristy ww</h1></td></tr>
+<table>
+    <h1>Website of Kristy ww</h1>
 
 
-    <tr><td colspan="2">
         <nav>
             <a href="home.html">Home</a> <a href="forms.html">Forms</a>
-        </nav></td></tr>
+        </nav>
 
 
-    <tr><td>
+<div>
 
         <aside>
-            <b>Forms Window</b><br><br>
+            <h2>ASIDE tag</h2><br><br>
         HTML supports different types of input<br>
             <img width ="200" src="http://www.newyorker.com/wp-content/uploads/2014/08/Stokes-Hello-Kitty2-1200.jpg">
         </aside>
-    </td>
+    </div>
 
+<div>
 <article>
-        <td><b>Forms Page</b><br><br>
+        <h2>ARTICLE tag</h2><br><br>
 
             This Following is a text input:<br><br>
             <form method="get" id="form">
@@ -51,6 +42,7 @@
                 Password:
                 <input type="password" name="psw">
             </form>
+
             <br><br>Radio Buttons:<br>
             <form method="get" id="form">
                 <input type="radio" name="radio" value="male">Male<br>
@@ -79,13 +71,12 @@
                 ctx.fillText("Thank you",2,55);
             </script>
 </article>
-        </td></tr>
+</div>
 
-    <tr><td colspan="2" align="center">
-        <footer>Footer for Kristy
-        </footer></td></tr>
-</table>
+
 
 </body>
+<footer>Footer for Kristy
+</footer>
 
 </html>
