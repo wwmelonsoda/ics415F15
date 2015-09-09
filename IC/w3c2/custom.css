@@ -1,0 +1,17 @@
+.jumbotron {
+    color: white;
+    background-color: powderblue;
+    border-width: 5px;
+    border-color: red;
+}
+
+.panel-footer {
+    color: white;
+    background-color: powderblue;
+
+}
+
+.mycontent-right {
+    border-left: 3px dashed red;
+}
+}

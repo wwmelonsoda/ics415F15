@@ -1,0 +1,91 @@
+html{
+}
+
+body {
+    background:white;
+}
+div {
+    display: inline;
+}
+header {
+    background-color:powderblue;
+    color:white;
+    text-align:center;
+    border-style: dashed;
+    border-color: deepskyblue;
+}
+
+h1 {
+    color:white;
+    text-align:center;
+    font-size:40px;
+}
+
+h2 {
+    color: white;
+    background-color: deepskyblue;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 2px;
+    padding-left: 14px;
+}
+
+aside {
+    color: white;
+    background-color:powderblue;
+    float:left;
+    padding:10px;
+}
+
+nav {
+    border-style: solid;
+    border-width: 2px;
+    border-color: deepskyblue;
+}
+article {
+    color: hotpink;
+    float:right;
+    padding:10px;
+}
+a {
+    color: deeppink;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: hotpink;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+a:hover {
+    color:lightpink;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+}
+input {
+    border: 2px solid powderblue;
+    color: pink;
+}
+
+img {
+    border-style: dashed;
+    border-width: 5px;
+    border-color: deepskyblue;
+    position: center;
+}
+footer {
+    background-color:powderblue;
+    color:white;
+    clear:both;
+    text-align:center;
+}
+canvas{
+    height:100px;
+    width: 100px;
+}
