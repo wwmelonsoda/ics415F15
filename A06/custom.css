@@ -1,11 +1,24 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+
+
 .jumbotron {
     color: white;
+    padding: 0px;
+    margin: 0px;
     background-color: #ffd78c;
+    position: relative;
+    height: 25%;
 }
 
 .panel-footer {
     color: white;
     background-color: #ffd78c;
+    min-height: 50px;
 
 }
 
@@ -36,7 +49,7 @@
 
 
 h1 {
-    color:darkorange;
+    color:white;
     text-align:center;
     font-size:40px;
 }
