@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>w4c1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+    <div class="jumbotron"><h1>Hello.</h1></div>
+
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+
+            <img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" src="http://www.iconhot.com/icon/png/hello-kitty/256/bow-pink.png" alt="Smiley" width="50" height="50">
+            <br><button onclick="myFunction()">Click me</button>
+            </div>
+
+        <div class="col-sm-4">
+            <p id="demo"></p>
+        </div>
+
+        <div class="col-sm-4">
+            <h1 id="colordemo">MOUSE OVER me.</h1>
+        </div>
+    </div>
+
+        <div class="panel-footer">Footer is here</div>
+
+        <script>
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. Hello World. What's up?";
+            }
+            function bigImg(x) {
+                x.style.height = "100px";
+                x.style.width = "100px";
+            }
+
+            function normalImg(x) {
+                x.style.height = "50px";
+                x.style.width = "50px";
+            }
+            document.getElementById("colordemo").addEventListener("mouseover", mouseOver);
+            document.getElementById("colordemo").addEventListener("mouseout", mouseOut);
+
+            function mouseOver() {
+                document.getElementById("colordemo").style.color = "pink";
+            }
+
+            function mouseOut() {
+                document.getElementById("colordemo").style.color = "deeppink";
+            }
+        </script>
+
+
+
+
+</body>
+</html>
