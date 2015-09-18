@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>w4c2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+    function getQueryVariable(variable)
+    {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+    }
+</script>
+
+<div class="jumbotron"><h1>Hello.</h1></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+
+          Left Column
+        </div>
+
+        <div class="col-sm-4">
+
+
+           <h1>Information provided</h1>
+
+            <table style="width:100%">
+                <tr>
+                    <td><b>Username:</b></td>
+                    <td><script>document.write(getQueryVariable("username"));</script></td>
+                </tr>
+                <tr>
+                    <td><b>Address:</b></td>
+                    <td><script>document.write(getQueryVariable("address"));</script></td>
+                </tr>
+                <tr>
+                    <td><b>Phone Number:</b></td>
+                    <td><script>document.write(getQueryVariable("phone"));</script></td>
+                </tr>
+            </table>
+
+
+        </div>
+
+        <div class="col-sm-4">
+
+            Right Column
+
+        </div>
+    </div>
+
+    <div class="panel-footer">Footer is here</div>
+
+    <script type="text/javascript">
+        function getQueryVariable(variable)
+        {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i=0;i<vars.length;i++) {
+                var pair = vars[i].split("=");
+                if(pair[0] == variable){return pair[1];}
+            }
+            return(false);
+        }
+    </script>
+
+
+</body>
+</html>

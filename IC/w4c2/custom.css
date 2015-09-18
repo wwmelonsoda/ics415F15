@@ -1,0 +1,37 @@
+.jumbotron {
+    color: pink;
+    background-color: hotpink;
+}
+button {
+    border-radius: 24px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    background: none;
+    padding: 5px 5px;
+    border: 2px solid hotpink;
+    color: hotpink;
+}
+
+.input-group {
+    font-weight: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #ffd78c;
+    border: 2px solid hotpink;
+    color: hotpink;
+}
+p {
+    color:hotpink;
+}
+
+h1{
+    color: hotpink;
+}
+
+.panel-footer {
+    color: pink;
+    background-color: hotpink;
+    position: center;
+
+}
