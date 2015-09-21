@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>w5c1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+
+
+    <div class="jumbotron"><h1>Jquery play.</h1></div>
+
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+
+<h2>I will blush when you come too close!</h2>
+            <br>
+             <ul>
+             <li>"Meow"</li> <li>"Nyan"</li>
+             </ul>
+
+            </div>
+
+
+        <div class="col-sm-6">
+            <p>Click my to go Away!</p>
+            <p>Goodbye!</p>
+             <p>I'm leaving too *click*</p>
+
+
+              </body>
+        </div>
+    </div>
+
+        <div class="panel-footer">Footer is here</div>
+
+
+        <!--------------JQUERY STUFF---------------------------->
+
+        <script>
+        $(document).ready(function(){
+    $("h2").mouseenter(function(){
+        $("h2").css("background-color", "lightpink");
+    });
+    $("h2").mouseleave(function(){
+        $("h2").css("background-color", "white");
+    });
+    });
+
+    $( "p" ).click(function() {
+        $( this ).slideUp();
+    });
+    $( "li" ).hover(
+    function() {
+        $( this ).append( $( "<span> -said the cat</span>" ) );
+    }, function() {
+        $( this ).find( "span:last" ).remove();
+    }
+    );
+
+    </script>
+   <!------------------------END JQUERY STUFF ------------------->
+
+
+
+
+</body>
+</html>
