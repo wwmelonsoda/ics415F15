@@ -1,10 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+    <title>A07: Kristy </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="myScript.js" type="text/javascript"></script>
 </head>
 <body>
 
-</body>
+
+<div class="jumbotron"><h1>Form Validation</h1></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h1>Please fill out the following form.</h1>
+            <img src="http://www.vectorsland.com/imgd/l74092-keroppi-logo-69778.png" border="0" width="200">
+
+
+        </div>
+
+
+        <div class="col-sm-8">
+
+            <form method="get" onsubmit=”return validateForm()” id="myForm">
+                <div id="validation"></div>
+                <label>Name<br><input type="text" name="Name"></label><br>
+                <label>Email<br><input type="text" name="Email"></label><br>
+                <label>Password<br><input type="password" name="Password"></label><br>
+                <label>Confirm Password<br><input type="password" name="Confirm"></label><br>
+                <input type="submit" value="Submit">
+            </form>
+
+            </div>
+
+</div>
+
+
+    <div class="panel-footer">Footer is here</div>
+
+   <script>
+        function Validate(form) {
+            var errors = "";
+            if (form.Name.value.length === 0) {
+                form.Name.style.border = "1px solid red";
+                form.Name.style.backgroundColor = "#FFCCCC";
+                errors += "<li>Please enter a Name</li>";
+            }
+
+            if (form.Name.value.length > 0) {
+                form.Name.style.border = null;
+                form.Name.style.backgroundColor = null;
+            }
+            if (form.Email.value.length === 0) {
+                form.Email.style.border = "1px solid red";
+                form.Email.style.backgroundColor = "#FFCCCC";
+                errors += "<li>Please enter an Email</li>";
+            }
+            if (form.Email.value.length > 0) {
+                form.Email.style.border = null;
+                form.Email.style.backgroundColor = null;
+            }
+            if (form.Password.value.length === 0) {
+                form.Password.style.border = "1px solid red";
+                form.Password.style.backgroundColor = "#FFCCCC";
+                errors += "<li>Please enter a Password</li>";
+            }
+            if (form.Password.value.length > 0) {
+                form.Password.style.border = null;
+                form.Password.style.backgroundColor = null;
+            }
+            if (form.Confirm.value != form.Password.value) {
+                form.Confirm.style.border = "1px solid red";
+                form.Confirm.style.backgroundColor = "#FFCCCC";
+                errors += "<li>Passwords do not match</li>";
+            }
+            if (errors.length > 0) {
+                document.getElementById("validation").innerHTML = "<ul>" + errors + "</ul>";
+                return false;
+            }
+
+
+            return true;
+        }
+        document.getElementById("myForm").onsubmit = function () {
+            return Validate(this);
+        };
+    </script>
+
+        </body>
 </html>
